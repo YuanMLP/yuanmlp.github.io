@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<hmtl>
+
+<!--I individually worked on this lab activity since I wasn't able to attend the face-to-face session.[2/14/2024]
+
+    Yuan Maximus L. Piamonte
+
+-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Registration Form </title>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+        <style>
+            .formbody {
+                background-color: slategray;
+            }
+
+            .form{
+                font-family: Oswald, sans-serif;
+                padding: 15px;
+                background-color: white;
+                margin: 0 350px 0 40px;
+                width: 25%;
+                border-radius: 10px;
+                
+            }
+
+            .submit{
+                background-color: green;
+            }
+
+            .reset{
+                background-color: red;
+            }
+
+            .inputfield {
+                width: 95%;
+            }
+            
+
+        </style>
+
+    </head>
+    
+    <body class="formbody">
+        
+        <div align="center">
+        <form class="form" action="/action_page.php" method="get">
+            <h1>REGISTRATION FORM</h1>
+
+            First Name:
+                <br >
+                    <input type= "text" name= "firstname" />
+                <br />
+            Last Name:
+                <br />
+                    <input type= "text" name= "lastname" />
+                <br />
+            Nick Name: 
+                <br />
+                    <input type= "text" name= "nickname" />
+                <br />
+            Email: 
+                <br />
+                    <input type= "text" name= "email" />
+                <br />
+            Password:
+                <br />
+                    <input type= "password" name= "password" />
+                <br />
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <input type="submit">
+                <br />
+            Mobile Number: 
+                <br />
+                    <input type= "tel" name= "mobilenumber" />
+                <br />
+            Gender:
+            <input type= "checkbox" name= "Male" /> Male
+            <input type= "checkbox" name= "Female" /> Female
+                <br />
+            
+            Address:
+                <br>
+                    <textarea class="inputfiled" name= "address" cols= "25" rows= "1" > </textarea>
+                <br />
+            <button class="submit" type="submit" value="Submit">Submit</button>
+            <button class="reset" type="reset" value="Reset">Reset</button>
+        </form>
+
+        </div>
+    </body>
+
+</hmtl>
