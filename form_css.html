@@ -16,16 +16,17 @@
         <style>
             .formbody {
                 background-color: slategray;
+                
             }
 
             .form{
                 font-family: Oswald, sans-serif;
                 padding: 15px;
                 background-color: white;
-                margin: 0 350px 0 40px;
                 width: 25%;
                 border-radius: 10px;
                 text-align: left;
+                align: center;
             }
 
             .submit{
@@ -40,6 +41,11 @@
                 width: 95%;
             }
             
+            .center-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
         </style>
 
@@ -47,7 +53,7 @@
     
     <body class="formbody">
         
-        <div align="center">
+        <div class="center-container">
         <form class="form" action="/action_page.php" method="get">
             <h1>REGISTRATION FORM</h1>
 
@@ -87,7 +93,7 @@
             
             Address:
                 <br>
-                    <textarea class="inputfiled" name= "address" cols= "25" rows= "1" > </textarea>
+                    <textarea class="inputfiled" name= "address" cols= "20" rows= "10" > </textarea>
                 <br />
             <button class="submit" type="submit" value="Submit">Submit</button>
             <button class="reset" type="reset" value="Reset">Reset</button>
